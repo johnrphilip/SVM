@@ -1,33 +1,32 @@
-# Support Vector Machine for Predicting Energy Consumption
+# Executive Summary
 
-## Executive Summary
+This project aims to analyze the impact of renewable energy usage on CO2 emissions in the UK. Utilizing datasets from the Office of National Statistics and the Global Carbon Project, we've built a Support Vector Regression (SVR) model to predict CO2 emissions based on various energy sources. The model employs optimization techniques like Tabu Search and Greedy Search for feature selection and is validated through metrics like R-squared and Mean Squared Error (MSE).
 
-- **Objective**: To predict the impact of renewable energy usage on the UK's carbon emissions using a Support Vector Regression (SVR) model.
-- **Methodology**: Utilized datasets from the Global Carbon Project and the Office of National Statistics. Employed tabu search and greedy search for feature selection optimization.
-- **Results**: Achieved high R-squared and low Mean Squared Error (MSE) values, proving the model's effectiveness.
-- **Limitations**: Did not account for all influencing variables like economic growth, energy type, and government policies.
-- **Implication**: Provides valuable insights for policymakers and businesses in the renewable energy sector.
+## What I Learned & Skills Demonstrated
 
-## 1. Introduction
+- **Data Preprocessing**: Handling different units, managing missing data, and nominal attributes.
+- **Exploratory Data Analysis**: Utilizing statistical and visual methods to understand the essence of the data.
+- **Machine Learning**: Developed a Support Vector Regression (SVR) model for prediction.
+- **Optimization Techniques**: Employed Tabu Search and Greedy Search for feature selection.
+- **Statistical Analysis**: Used R-squared and MSE for model evaluation, and employed K-fold cross-validation for robust validation.
+- **Data Visualization**: Used Python libraries like Matplotlib and Seaborn for graphical representation.
+- **Programming**: Python, Pandas, NumPy, Matplotlib, Scikit-learn.
 
-- Address the significant role of the energy sector in climate change.
-- Data sourced from the Global Carbon Project and Office of National Statistics.
+## Sections
 
-## 2. Literature Review
+### Introduction
+Provides a context to the urgency of addressing climate change and sets the stage for the study.
 
-- Various AI models, including ANN, decision trees, naive Bayes, and support vector machines, are employed in energy prediction.
-- Importance of feature selection optimization techniques like tabu search, hill climbing, etc.
+### Literature Review
+Explores existing models and techniques in energy prediction, focusing on the utility of Support Vector Machines (SVM) in this domain.
 
-## 3. Research Design
+### Research Design
+Outlines the methodology, including the SVR model and the optimization techniques used for feature selection.
 
-- Utilized Support Vector Regression with a linear kernel.
-- Used tabu search for feature optimization.
-- Development environment: Python, Datalore Jupyter notebook.
-  
-## 4. Experimental Results and Analysis
+### Experimental Results and Analysis
+Discusses the model's performance based on various metrics and compares different optimization techniques.
 
-- High R-squared and low MSE values indicate effective modeling.
-- Tabu Search and Greedy Search performed well in feature optimization.
+
   
 | Model Name                     | MSE     | R-squared | K-Fold MSE | K-Fold R^2 |
 | ------------------------------ | ------- | --------- | ---------- | ---------- |
@@ -35,6 +34,15 @@
 | SVR with randomly chosen feat. | 1482.17 | 0.78      | 2249.19    | -15.88     |
 | SVR w/ Tabu                    | 76.18   | 0.988     | 286.41     | -0.23      |
 | SVR w/ Greedy Approach         | 18.34   | 0.997     | 132.76     | -3.83      |
+
+### Business Challenge
+Explains the practical applications of the predictive model in real-world scenarios.
+
+### Limitations
+Identifies the challenges and limitations faced during the research.
+
+### Conclusion
+Summarizes the findings and suggests future lines of investigation.
 
 ## 5. Conclusion and Future Work
 
